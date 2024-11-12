@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <sty
+  </head>
+  <body>
+    <div class="control clearfix">
+      <div class="control-session">
+        <span class="control-title">session</span>
+        <i class="fa fa-minus-circle" id="session-minus"></i> &nbsp; <span id="session">25</span> &nbsp; <i class="fa fa-plus-circle" id="session-plus"></i>
+      </div>
+      <div class="control-break">
+        <span class="control-title">break</span>
+        <i class="fa fa-minus-circle" id="break-minus"></i> &nbsp; <span id="break">5</span> &nbsp; <i class="fa fa-plus-circle" id="break-plus"></i>
+      </div>
+    </div>
+      <div class="pomodoro session">
+        <br>
+        <br>
+        <div class="status">session</div>
+        <div class="timer">25:00</div>
+        <button class="button" id="switch"><i class="fa fa-exchange"></i></button>
+        <button class="button" id="reset"><i class="fa fa-refresh"></i></button>
+        <button class="button" id="toggle"><i class="fa fa-play"></i></button>
+      </div>
+    </div>
+    <div class="right-frame">
+      <div class="right-header">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3zYvBuSJFFIgVvTDkUok4A?utm_source=generator&theme=0"
+        width="50%" height="102" 
+        frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="controls" style="display: none">
+        <div class="sound"></div>
+        <div class="score"></div>
+      </div>
+      <div class="canvas"></div>
+      <div class="actions" style="display: none">
+        <div class="game"></div>
+        <div class="editor"></div>
+      </div>
+    </div>
+    <div class="debug hide"></div>
+    <audio id="buttonSound" src="button.mp3"></audio>
+    <script src="svg.js"></script>
+    <script src="pomo.js"></script>
+  </body>
+</html>

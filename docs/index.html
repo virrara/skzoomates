@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#f2d7bf">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Font Awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha384-6BQsdqjiK+COa2qK/7mU9vLoSM9eZ1Iu7ZcXnIvHCPf8pNBHZmR1TZLnw/AFi1l6"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>SKZooMates</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="todo.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none"></svg>
+    <div class="right-frame">
+      <div class="right-content">
+        <a href="focusRoom/focusRoom.html">
+          <button class="circle-button">
+            <i class="fas fa-school" style="font-size: 2em; color: #c99a70;"></i>
+          </button>
+        </a>        
+    <div class="right-header"><br><br><br><br><img src="Asset 2.svg" width="30%"></div>
+    <!--        <header>
+          <h1>My To Do List</h1>
+        </header>-->
+        <div id="todo-list">
+          <form action="">
+            <input type="text" class="todo-input">
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-circle fa-lg" style="font-size: 35px;"></i>
+            </button>
+            <div class="select">
+              <select name="todos" class="filter-todo">
+                  <option value="all">All</option>
+                  <option value="completed">Completed</option>
+                  <option value="incomplete">Incomplete</option>
+              </select>
+            </div>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="controls">
+        <div class="sound"></div>
+        <div class="score"></div>
+      </div>
+      <div class="canvas"></div> 
+      <div class="actions">
+        <div class="game"></div>
+        <div class="editor"></div>
+      </div>
+      <div>
+    </div>
+    <div class="debug hide"></div>
+    <audio id="buttonSound" src="button.mp3"></audio>
+    <script src="svg.js"></script>
+    <script src="script.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
